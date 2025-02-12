@@ -1,4 +1,4 @@
-rom random import shuffle 
+from random import shuffle 
 #functions
 def start():
 
