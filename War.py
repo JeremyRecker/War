@@ -24,7 +24,7 @@ def start():
     wholeDeck = buildDeck()
     deal()
 
-def roundHandler():
+def playHandler():
     if playerDeck[0] > cpuDeck[0]:
         return True
     elif cpuDeck[0] > playerDeck[0]:
@@ -66,7 +66,8 @@ print("\n")
 print (playerDeck)
 
 ''' to do:
-    make varible to store round win
     handle ties (war)
-    refactor toWinPiles to use roundHandler '''
+    make variable to store round winner
+    make variable to store round winnings
+    refactor toWinPiles to use playHandler '''
     
