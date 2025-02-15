@@ -3,6 +3,7 @@ from random import shuffle
 '''
     handle ties (war)
         handle tieBreaker recursion
+            handle tieCount iteration
     make variable to store round winner?
     make variable to store round winnings?
     refactor toWinPiles to use roundChecker
