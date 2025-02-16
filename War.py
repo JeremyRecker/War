@@ -1,6 +1,7 @@
 from random import shuffle 
 #to do:
 '''
+    delete old test code
     handle card value check and comparison
     test ties (war)
         write tieTest
