@@ -1,12 +1,12 @@
 from random import shuffle 
 #to do:
 '''
-    handle ties (war)
-        handle tieBreaker recursion
-            handle tieCount iteration
+    handle card value check and comparison
+    test ties (war)
+        write tieTest
     make variable to store round winner?
     make variable to store round winnings?
-    refactor toWinPiles to use roundChecker
+    refactor toWinPiles to use roundChecker and then test
 
 '''
     
@@ -36,13 +36,16 @@ def start():
     wholeDeck = buildDeck()
     deal()
 
+def tieTest():
+
 
 def roundChecker():# check round winner
     tieCount = 0
     def tieBreaker():
-       
-        player = max(playerDeck[1:4])
-        cpu = max(cpuDeck[1:4])
+        nonlocal tieCount
+        tieCount += 1
+        player = max(playerDeck[((tieCount * 3) - 2):((tieCount * 3) + 1)])
+        cpu = max(cpuDeck[((tieCount * 3) - 2):((tieCount * 3) + 1)])
         if cpu > player:
            return 'cpu'
         elif player > cpu:
