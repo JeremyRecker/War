@@ -1,0 +1,12 @@
+    refactor code so that face cards start with numerical value 
+    to then be converted only for "display"
+    
+    delete old test code
+    refactor so that suit isn't being ignored in indexing logic
+    handle card value check and comparison
+    test ties (war)
+        write tieTest
+    make variable to store round winner?
+    make variable to store round winnings?
+    refactor toWinPiles to use roundChecker and then test
+    rewrite in OOP format

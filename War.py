@@ -12,6 +12,7 @@ from random import shuffle
     make variable to store round winner?
     make variable to store round winnings?
     refactor toWinPiles to use roundChecker and then test
+    rewrite in OOP format
 
 '''
     
